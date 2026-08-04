@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+  background: #151219;
+  color: #fff;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100svh;
+  background: #151219;
+}
+
+main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 8vw, 6rem) 1.25rem;
+}
+
+.logo-crop {
+  width: min(88vw, 980px);
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+}
+
+.logo-crop img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(-33.333%);
+}
+
+a {
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  color: inherit;
+  font-size: clamp(0.9rem, 2.25vw, 1.4rem);
+  font-weight: 200;
+  letter-spacing: 0.075em;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.35em;
+}
+
+a:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 0.5rem;
+}
+
+@media (max-width: 420px) {
+  a {
+    letter-spacing: 0.04em;
+  }
+}
